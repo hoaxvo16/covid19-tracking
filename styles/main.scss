@@ -1,0 +1,96 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+.nav {
+  padding: 20px 200px;
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 19px 0px;
+}
+.nav-li {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+  a {
+    font-size: 1.3rem;
+  }
+}
+
+
+.nav-icon {
+  position: absolute;
+  top: 25px;
+  left: 120px;
+  font-size: 4.2rem;
+  color: red;
+}
+
+a {
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  color: black;
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.nav-link:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: black;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.nav-link:hover:after {
+  width: 100%;
+  left: 0;
+}
+.container {
+
+  background-image: url("../public/global-connections.jpg");
+  height: 100vh;
+  background-size: cover;
+  color: white;
+ 
+}
+.row {
+  display: flex;
+  align-items: center;
+  padding: 50px 0px;
+}
+.col {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Graphik", sans-serif;
+  h1{
+      font-size: 2.5rem;
+      text-transform: uppercase;
+  }
+  p{
+      font-size: 1.6rem
+  }
+  a{
+      color: white
+  }
+}
+@import url("responsive.css");
+
+
