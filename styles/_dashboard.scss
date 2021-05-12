@@ -1,0 +1,34 @@
+.web-link {
+    color: orange !important;
+    font-size: 1.5rem;
+    padding: 0px 8px;
+}
+.data-grid {
+    width: 1000px;
+    height: 600px;
+    overflow-y: auto;
+}
+
+.country-flag {
+    width: 30px;
+    margin-top: 20px;
+}
+.dashboard-col {
+    color: black;
+    background-color: #fff;
+    height: 800px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 20px 0px 10px;
+    padding: 20px 100px;
+    margin: 20px 100px;
+}
+.total {
+    padding: 30px 0px 0px 0px;
+    span {
+        margin: 0px 15px;
+        font-size: 1.2rem;
+        span {
+            font-weight: bold;
+        }
+    }
+}

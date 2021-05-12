@@ -1,29 +1,53 @@
 import { DataGrid } from "@material-ui/data-grid";
+import { useEffect, useState } from "react";
+import getCovidData from "../../services/getCovidData";
 export default function DashBoard() {
   const columns = [
     { field: "id", headerName: "ID", width: 70 },
-    { field: "country", headerName: "Country", width: 130 },
-    { field: "infected", headerName: "Infected", width: 130, type: "number" },
     {
-      field: "age",
-      headerName: "Age",
-      type: "number",
-      width: 90,
+      field: "flag",
+      headerName: "Flag",
+      width: 130,
+      renderCell: params => (
+        <strong>
+          <img className="country-flag" src={params.value}></img>
+        </strong>
+      ),
     },
-    {
-      field: "fullName",
-      headerName: "Full name",
-      description: "This column has a value getter and is not sortable.",
-      sortable: false,
-      width: 160,
-      valueGetter: params => `${params.getValue("firstName") || ""} ${params.getValue("lastName") || ""}`,
-    },
+    { field: "country", headerName: "Country", width: 250 },
+    { field: "infected", headerName: "Infected", width: 150, type: "number" },
+    { field: "recovered", headerName: "Recovered", width: 150, type: "number" },
+    { field: "deaths", headerName: "Deaths", width: 150, type: "number" },
   ];
-  const rows = [{ id: 1, lastName: "Snow", firstName: "Jon", age: 35 }];
+  const [rowsData, setRowsData] = useState([]);
+  const [globalData, setGloBalData] = useState({ TotalConfirmed: 0, TotalRecovered: 0, TotalDeaths: 0 });
+
+  useEffect(async () => {
+    const covidData = await getCovidData();
+    setRowsData(covidData[0]);
+    setGloBalData(covidData[1]);
+    return () => {};
+  }, []);
+
   return (
     <div className="dashboard">
-      <h2>DASHBOARD</h2>
-      <DataGrid autoHeight rows={rows} columns={columns} pageSize={5} checkboxSelection />
+      <div>
+        <h2>COUNTRIES</h2>
+        <div className="data-grid">
+          <DataGrid rows={rowsData} columns={columns} />
+        </div>
+      </div>
+      <div className="total">
+        <span>
+          <span>Total infected:</span> {globalData.TotalConfirmed}
+        </span>
+        <span>
+          <span>Total recovered:</span> {globalData.TotalRecovered}
+        </span>
+        <span>
+          <span>Total deaths:</span> {globalData.TotalDeaths}
+        </span>
+      </div>
     </div>
   );
 }

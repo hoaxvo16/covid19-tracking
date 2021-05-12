@@ -15,8 +15,8 @@ export default function Home() {
             <h1>The Covid-19 tracking website</h1>
             <p>
               This website using API of
-              <a className="web-link" href="https://apify.com/covid-19" target="_blank">
-                apify
+              <a className="web-link" href="https://documenter.getpostman.com/view/10808728/SzS8rjbc" target="_blank">
+                Postman
               </a>
               to tracking covid 19
             </p>
