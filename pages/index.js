@@ -12,9 +12,17 @@ export default function Home() {
       <div className="container">
         <div className="row">
           <div className="col">
-            <h1>The Covid-19 tracking web</h1>
-            <p>This web using API of apify.net to tracking covid 19</p>
-            <a>View source code</a>
+            <h1>The Covid-19 tracking website</h1>
+            <p>
+              This website using API of
+              <a className="web-link" href="https://apify.com/covid-19" target="_blank">
+                apify
+              </a>
+              to tracking covid 19
+            </p>
+            <a href="https://github.com/mcsheffey/covid19-tracking" target="_blank">
+              View source code
+            </a>
           </div>
         </div>
         <div className="dashboard-col">

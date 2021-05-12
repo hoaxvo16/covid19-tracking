@@ -11,7 +11,7 @@ export default function NavigationBar() {
         <li className="nav-li">
           <a className="nav-link">Home</a>
           <a className="nav-link">News</a>
-          <a className="nav-link">Covid Api</a>
+          <a className="nav-link">Your country</a>
         </li>
       </ul>
     </div>
