@@ -4,7 +4,10 @@ export default function NavigationBar() {
   return (
     <div className="nav">
       <ul>
-        <FontAwesomeIcon className="nav-icon" icon={faBiohazard}></FontAwesomeIcon>
+        <p className="logo">
+          <FontAwesomeIcon className="nav-icon" icon={faBiohazard}></FontAwesomeIcon>
+          covid tracking
+        </p>
         <li className="nav-li">
           <a className="nav-link">Home</a>
           <a className="nav-link">News</a>

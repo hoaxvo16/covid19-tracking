@@ -1,96 +1,114 @@
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+        Helvetica Neue, sans-serif;
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 .nav {
-  padding: 20px 200px;
-  display: flex;
-  width: 100%;
-  justify-content: flex-end;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 19px 0px;
+    padding: 20px 200px;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 19px 0px;
 }
 .nav-li {
-  display: flex;
-  justify-content: space-between;
-  width: 500px;
-  a {
-    font-size: 1.3rem;
-  }
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    a {
+        font-size: 1.3rem;
+    }
 }
 
-
 .nav-icon {
-  position: absolute;
-  top: 25px;
-  left: 120px;
-  font-size: 4.2rem;
-  color: red;
+    font-size: 4.2rem;
+    color: red;
+    position: relative;
+    margin-right: 10px;
 }
 
 a {
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: 0.15em;
-  color: black;
-  display: inline-block;
-  padding: 15px 20px;
-  position: relative;
-  cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    color: black;
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+    cursor: pointer;
 }
 
 .nav-link:after {
-  background: none repeat scroll 0 0 transparent;
-  bottom: 0;
-  content: "";
-  display: block;
-  height: 2px;
-  left: 50%;
-  position: absolute;
-  background: black;
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 0;
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: black;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
 }
 .nav-link:hover:after {
-  width: 100%;
-  left: 0;
+    width: 100%;
+    left: 0;
 }
 .container {
-
-  background-image: url("../public/global-connections.jpg");
-  height: 100vh;
-  background-size: cover;
-  color: white;
- 
+    background-image: url("../public/global-connections.jpg");
+    height: 1200px;
+    background-size: cover;
+    color: white;
+    font-family: "Graphik", sans-serif;
 }
 .row {
-  display: flex;
-  align-items: center;
-  padding: 50px 0px;
+    display: flex;
+    align-items: center;
+    padding: 50px 0px;
 }
 .col {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  font-family: "Graphik", sans-serif;
-  h1{
-      font-size: 2.5rem;
-      text-transform: uppercase;
-  }
-  p{
-      font-size: 1.6rem
-  }
-  a{
-      color: white
-  }
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        font-size: 2.5rem;
+        text-transform: uppercase;
+    }
+    p {
+        font-size: 1.6rem;
+    }
+    a {
+        color: white;
+    }
+}
+.logo {
+    position: absolute;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    top: 0px;
+    width: 200px;
+    justify-content: space-between;
+    top: 10px;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: red;
+}
+.dashboard-col {
+    color: black;
+    background-color: #fff;
+    height: 600px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 10px 0px 10px;
+    padding: 20px 100px;
+    margin: 20px 100px;
 }
 @import url("responsive.css");
-
-
