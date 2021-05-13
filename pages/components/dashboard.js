@@ -32,21 +32,21 @@ export default function DashBoard() {
   return (
     <div className="dashboard">
       <div>
-        <h2>COUNTRIES</h2>
+        <h2>WORLDWIDE</h2>
+        <div className="total">
+          <span>
+            <span>Total infected:</span> {globalData.TotalConfirmed}
+          </span>
+          <span>
+            <span>Total recovered:</span> {globalData.TotalRecovered}
+          </span>
+          <span>
+            <span>Total deaths:</span> {globalData.TotalDeaths}
+          </span>
+        </div>
         <div className="data-grid">
           <DataGrid rows={rowsData} columns={columns} />
         </div>
-      </div>
-      <div className="total">
-        <span>
-          <span>Total infected:</span> {globalData.TotalConfirmed}
-        </span>
-        <span>
-          <span>Total recovered:</span> {globalData.TotalRecovered}
-        </span>
-        <span>
-          <span>Total deaths:</span> {globalData.TotalDeaths}
-        </span>
       </div>
     </div>
   );
