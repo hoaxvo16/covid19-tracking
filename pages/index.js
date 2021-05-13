@@ -13,7 +13,7 @@ export default function Home() {
   };
   return (
     <div>
-      <div onClick={closeSidebar} class="disable-div"></div>
+      <div onClick={closeSidebar} className="disable-div"></div>
       <NavigationBar></NavigationBar>
       <div className="container">
         <div className="row">
