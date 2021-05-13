@@ -1,13 +1,19 @@
 import Head from "next/head";
 import { useEffect, useState } from "react";
-import styles from "../styles/Home.module.css";
 import NavigationBar from "./components/navbar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import DashBoard from "./components/dashboard";
 
 export default function Home() {
+  const closeSidebar = () => {
+    const sideBar = document.querySelector(".side-bar");
+    const disableDiv = document.querySelector(".disable-div");
+    sideBar.style.transform = "translateX(400px)";
+    disableDiv.style.display = "none";
+  };
   return (
     <div>
+      <div onClick={closeSidebar} class="disable-div"></div>
       <NavigationBar></NavigationBar>
       <div className="container">
         <div className="row">

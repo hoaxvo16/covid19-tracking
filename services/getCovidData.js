@@ -8,7 +8,6 @@ export default async function getCovidData() {
     let flag;
     if (arr.length > 1) {
       let fortmatted = formatCountryName(arr);
-      console.log(fortmatted);
       flag = `https://cdn.countryflags.com/thumbs/${fortmatted}/flag-square-500.png`;
     } else {
       if (element.Country === "Timor-Leste") flag = `https://cdn.countryflags.com/thumbs/east-timor/flag-square-500.png`;

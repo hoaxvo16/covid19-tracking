@@ -1,9 +1,12 @@
+$client-height: 1350px;
 html,
 body {
     padding: 0;
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
         Helvetica Neue, sans-serif;
+    min-height: 100%;
+    overflow-x: hidden;
 }
 
 * {
@@ -61,10 +64,11 @@ a {
 }
 .container {
     background-image: url("../public/global-connections.jpg");
-    height: 1200px;
+    height: 100%;
     background-size: cover;
     color: white;
     font-family: "Graphik", sans-serif;
+    padding: 0px 0px 50px 0px;
 }
 .row {
     display: flex;
@@ -74,7 +78,7 @@ a {
 .col {
     width: 100%;
     display: flex;
-    justify-content: center;
+    padding: 0px 20px;
     flex-direction: column;
     align-items: center;
 
@@ -102,5 +106,47 @@ a {
     font-size: 1.5rem;
     color: red;
 }
+.bars-icon {
+    display: none;
+    font-size: 2.5rem;
+}
+.side-bar {
+    position: absolute;
+    width: 400px;
+    background-color: #fff;
+    height: $client-height;
+    z-index: 2;
+    right: 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transform: translateX(400px);
+    top: 0px;
+    transition: all ease 0.5s;
+    bottom: 0px;
+    padding-top: 100px;
+    a {
+        margin-bottom: 30px;
+        font-size: 1.5rem;
+    }
+}
+.disable-div {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: $client-height;
+    z-index: 1;
+    display: none;
+    top: 0;
+    bottom: 0;
+}
+.times-icon {
+    font-size: 2.5rem;
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    cursor: pointer;
+}
 
 @import "./dashboard";
+@import "./responsive";

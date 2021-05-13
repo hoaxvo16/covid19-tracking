@@ -1,0 +1,30 @@
+@media screen and (max-width: 1300px) {
+    .data-grid {
+        width: 900px;
+    }
+}
+@media screen and (max-width: 1210px) {
+    .data-grid {
+        width: 800px;
+        height: 550px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .nav-li {
+        display: none;
+    }
+    .nav {
+        padding: 50px 100px;
+    }
+    .bars-icon {
+        display: block;
+    }
+}
+@media screen and (min-width: 1000px) {
+    .disable-div {
+        display: none !important;
+    }
+    .side-bar {
+        display: none;
+    }
+}
