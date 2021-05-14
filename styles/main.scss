@@ -18,6 +18,11 @@ body {
     width: 100%;
     justify-content: flex-end;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    position: sticky;
+    position: fixed;
+    top: 0;
+    background: #fff;
+    z-index: 2;
 }
 .nav-li {
     display: flex;

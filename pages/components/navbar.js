@@ -38,8 +38,13 @@ export default function NavigationBar() {
       </ul>
       <div className="side-bar">
         <FontAwesomeIcon onClick={closeSidebar} className="times-icon" icon={faTimes}></FontAwesomeIcon>
-        <a className="nav-link">Home</a>
-        <a className="nav-link">News</a>
+        <Link href="/">
+          <a className="nav-link">Home</a>
+        </Link>
+
+        <Link href="/new">
+          <a className="nav-link">News</a>
+        </Link>
         <a className="nav-link">api guidline</a>
       </div>
     </div>
