@@ -1,5 +1,6 @@
 import NavigationBar from "./components/navbar";
 import React, { useEffect, useState } from "react";
+import Footer from "./components/footer";
 export default function News() {
   const closeSidebar = () => {
     const sideBar = document.querySelector(".side-bar");
@@ -14,6 +15,7 @@ export default function News() {
     setNewsData(data.articles);
     const loading = document.querySelector(".loading");
     loading.style.display = "none";
+    return () => {};
   }, []);
   return (
     <div>
@@ -34,6 +36,7 @@ export default function News() {
       <div className="main-content">
         <NewsContent content={newsData}></NewsContent>
       </div>
+      <Footer></Footer>
     </div>
   );
 }

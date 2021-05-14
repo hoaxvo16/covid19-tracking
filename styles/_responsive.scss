@@ -20,6 +20,11 @@
         display: block;
     }
 }
+@media screen and (max-width: 907) {
+    .col p {
+        padding: 10px;
+    }
+}
 @media screen and (min-width: 1000px) {
     .disable-div {
         display: none !important;

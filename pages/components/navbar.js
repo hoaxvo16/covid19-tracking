@@ -17,25 +17,7 @@ export default function NavigationBar() {
     disableDiv.style.display = "none";
   };
   return (
-    <div className="nav">
-      <ul>
-        <p className="logo">
-          <FontAwesomeIcon className="nav-icon" icon={faBiohazard}></FontAwesomeIcon>
-          covid tracking
-        </p>
-        <FontAwesomeIcon onClick={openSidebar} className="bars-icon" icon={faBars}></FontAwesomeIcon>
-        <li className="nav-li">
-          <Link href="/">
-            <a className="nav-link">Home</a>
-          </Link>
-
-          <Link href="/new">
-            <a className="nav-link">News</a>
-          </Link>
-
-          <a className="nav-link">api guidline</a>
-        </li>
-      </ul>
+    <div>
       <div className="side-bar">
         <FontAwesomeIcon onClick={closeSidebar} className="times-icon" icon={faTimes}></FontAwesomeIcon>
         <Link href="/">
@@ -45,7 +27,27 @@ export default function NavigationBar() {
         <Link href="/new">
           <a className="nav-link">News</a>
         </Link>
-        <a className="nav-link">api guidline</a>
+        <a className="nav-link"> Guidline</a>
+      </div>
+      <div className="nav">
+        <ul>
+          <p className="logo">
+            <FontAwesomeIcon className="nav-icon" icon={faBiohazard}></FontAwesomeIcon>
+            covid tracking
+          </p>
+          <FontAwesomeIcon onClick={openSidebar} className="bars-icon" icon={faBars}></FontAwesomeIcon>
+          <li className="nav-li">
+            <Link href="/">
+              <a className="nav-link">Home</a>
+            </Link>
+
+            <Link href="/new">
+              <a className="nav-link">News</a>
+            </Link>
+
+            <a className="nav-link">Guidline</a>
+          </li>
+        </ul>
       </div>
     </div>
   );

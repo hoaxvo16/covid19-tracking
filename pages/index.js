@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import NavigationBar from "./components/navbar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import DashBoard from "./components/dashboard";
+import Footer from "./components/footer";
 
 export default function Home() {
   const closeSidebar = () => {
@@ -13,28 +14,20 @@ export default function Home() {
   };
   return (
     <div>
-      <div onClick={closeSidebar} className="disable-div"></div>
       <NavigationBar></NavigationBar>
       <div className="container">
+        <div onClick={closeSidebar} className="disable-div"></div>
         <div className="row">
           <div className="col">
             <h1>The Covid-19 tracking website</h1>
-            <p>
-              This website using API of
-              <a className="web-link" href="https://documenter.getpostman.com/view/10808728/SzS8rjbc" target="_blank">
-                Postman
-              </a>
-              to tracking covid 19
-            </p>
-            <a href="https://github.com/mcsheffey/covid19-tracking" target="_blank">
-              View source code
-            </a>
+            <p>DUE TO THE COVID-19 PADEMIC I MADE A WEBSITE TO TRACKING IT</p>
           </div>
         </div>
         <div className="dashboard-col">
           <DashBoard></DashBoard>
         </div>
       </div>
+      <Footer></Footer>
     </div>
   );
 }
