@@ -403,6 +403,10 @@ a {
   left: 12px;
 }
 
+.main-content {
+  margin-top: 140px;
+}
+
 @-webkit-keyframes lds-roller {
   0% {
     -webkit-transform: rotate(0deg);
