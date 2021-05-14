@@ -1,5 +1,4 @@
 import NavigationBar from "./components/navbar";
-import getNews from "../services/getNews";
 import React, { useEffect, useState } from "react";
 export default function News() {
   const closeSidebar = () => {
@@ -10,7 +9,8 @@ export default function News() {
   };
   const [newsData, setNewsData] = useState([]);
   useEffect(async () => {
-    const data = await getNews();
+    const res = await fetch("/api/new");
+    const data = await res.json();
     setNewsData(data.articles);
     const loading = document.querySelector(".loading");
     loading.style.display = "none";
