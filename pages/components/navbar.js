@@ -27,7 +27,9 @@ export default function NavigationBar() {
         <Link href="/new">
           <a className="nav-link">News</a>
         </Link>
-        <a className="nav-link"> Guidline</a>
+        <Link href="/guideline">
+          <a className="nav-link">Guidline</a>
+        </Link>
       </div>
       <div className="nav">
         <ul>
@@ -44,8 +46,9 @@ export default function NavigationBar() {
             <Link href="/new">
               <a className="nav-link">News</a>
             </Link>
-
-            <a className="nav-link">Guidline</a>
+            <Link href="/guideline">
+              <a className="nav-link">Guidline</a>
+            </Link>
           </li>
         </ul>
       </div>

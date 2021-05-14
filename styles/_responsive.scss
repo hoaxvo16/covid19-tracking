@@ -13,11 +13,12 @@
     .nav-li {
         display: none;
     }
-    .nav {
-        padding: 50px 100px;
-    }
     .bars-icon {
         display: block;
+        right: 10px;
+    }
+    .nav {
+        padding: 30px;
     }
 }
 @media screen and (max-width: 907) {
