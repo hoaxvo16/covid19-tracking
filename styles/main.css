@@ -161,7 +161,7 @@ a {
 }
 
 .side-bar {
-  position: absolute;
+  position: fixed;
   width: 300px;
   background-color: #fff;
   z-index: 3;
@@ -532,6 +532,9 @@ a {
 @media screen and (max-width: 500px) {
   .data-grid {
     height: 450px;
+  }
+  .total span {
+    margin: 10px 0px;
   }
 }
 
