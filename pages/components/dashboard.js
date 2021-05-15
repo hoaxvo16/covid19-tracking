@@ -14,7 +14,7 @@ export default function DashBoard() {
         </strong>
       ),
     },
-    { field: "country", headerName: "Country", width: 250 },
+    { field: "country", headerName: "Country", width: 200 },
     { field: "infected", headerName: "Infected", width: 150, type: "number" },
     { field: "recovered", headerName: "Recovered", width: 150, type: "number" },
     { field: "deaths", headerName: "Deaths", width: 150, type: "number" },
@@ -30,23 +30,21 @@ export default function DashBoard() {
   }, []);
 
   return (
-    <div className="dashboard">
-      <div>
-        <h2>WORLDWIDE</h2>
-        <div className="total">
-          <span>
-            <span>Total infected:</span> {globalData.TotalConfirmed}
-          </span>
-          <span>
-            <span>Total recovered:</span> {globalData.TotalRecovered}
-          </span>
-          <span>
-            <span>Total deaths:</span> {globalData.TotalDeaths}
-          </span>
-        </div>
-        <div className="data-grid">
-          <DataGrid rows={rowsData} columns={columns} />
-        </div>
+    <div>
+      <h2>WORLDWIDE</h2>
+      <div className="total">
+        <span>
+          <span>Total infected:</span> {globalData.TotalConfirmed}
+        </span>
+        <span>
+          <span>Total recovered:</span> {globalData.TotalRecovered}
+        </span>
+        <span>
+          <span>Total deaths:</span> {globalData.TotalDeaths}
+        </span>
+      </div>
+      <div className="data-grid">
+        <DataGrid rows={rowsData} columns={columns} />
       </div>
     </div>
   );

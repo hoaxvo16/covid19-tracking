@@ -46,7 +46,7 @@ function NewsContent(props) {
   const content = news.map(element => (
     <div key={element.key} className="article">
       <div className="content">
-        <a className="article-header" href={element.url}>
+        <a className="article-header" target="_blank" href={element.url}>
           {element.title}
         </a>
         <p className="article-decription">{element.description}</p>

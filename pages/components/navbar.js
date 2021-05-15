@@ -32,11 +32,11 @@ export default function NavigationBar() {
         </Link>
       </div>
       <div className="nav">
+        <p className="logo">
+          <FontAwesomeIcon className="nav-icon" icon={faBiohazard}></FontAwesomeIcon>
+          covid tracking
+        </p>
         <ul>
-          <p className="logo">
-            <FontAwesomeIcon className="nav-icon" icon={faBiohazard}></FontAwesomeIcon>
-            covid tracking
-          </p>
           <FontAwesomeIcon onClick={openSidebar} className="bars-icon" icon={faBars}></FontAwesomeIcon>
           <li className="nav-li">
             <Link href="/">
