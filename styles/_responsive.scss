@@ -38,6 +38,14 @@
     .data-grid {
         height: 500px;
     }
+    .article {
+        display: flex;
+        flex-direction: column;
+        padding: 50px 20px;
+    }
+    .news-image {
+        width: 500px;
+    }
 }
 @media screen and (max-width: 500px) {
     .data-grid {
@@ -46,12 +54,19 @@
     .total span {
         margin: 10px 0px;
     }
+    .news-image {
+        width: 400px;
+    }
 }
 @media screen and (max-width: 400px) {
     .data-grid {
         height: 400px;
     }
+    .news-image {
+        width: 300px;
+    }
 }
+
 @media screen and (max-width: 300px) {
     .data-grid {
         height: 350px;

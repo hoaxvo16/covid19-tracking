@@ -454,6 +454,8 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .footer a {
@@ -527,6 +529,19 @@ a {
   .data-grid {
     height: 500px;
   }
+  .article {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 50px 20px;
+  }
+  .news-image {
+    width: 500px;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -536,11 +551,17 @@ a {
   .total span {
     margin: 10px 0px;
   }
+  .news-image {
+    width: 400px;
+  }
 }
 
 @media screen and (max-width: 400px) {
   .data-grid {
     height: 400px;
+  }
+  .news-image {
+    width: 300px;
   }
 }
 
