@@ -1,6 +1,7 @@
 import NavigationBar from "./components/navbar";
 import React, { useEffect, useState } from "react";
 import Footer from "./components/footer";
+import cache from "memory-cache";
 export default function News() {
   const closeSidebar = () => {
     const sideBar = document.querySelector(".side-bar");
@@ -10,9 +11,17 @@ export default function News() {
   };
   const [newsData, setNewsData] = useState([]);
   useEffect(async () => {
-    const res = await fetch("/api/new");
-    const data = await res.json();
-    setNewsData(data.articles);
+    const cachedResponse = cache.get("/api/new");
+    if (cachedResponse) {
+      setNewsData(cachedResponse.articles);
+    } else {
+      const hours = 24;
+      const res = await fetch("/api/new");
+      const data = await res.json();
+      cache.put("/api/new", data, hours * 1000 * 60 * 60);
+      setNewsData(data.articles);
+    }
+
     const loading = document.querySelector(".loading");
     loading.style.display = "none";
     return () => {};

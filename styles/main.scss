@@ -1,160 +1,160 @@
 html,
 body {
-    padding: 0;
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
-        Helvetica Neue, sans-serif;
-    min-height: 100%;
-    overflow-x: hidden;
-    position: relative;
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+    Helvetica Neue, sans-serif;
+  min-height: 100%;
+  overflow-x: hidden;
+  position: relative;
 }
 
 body {
-    overflow-y: hidden;
+  overflow-y: hidden;
 }
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 .nav {
-    padding: 10px 200px;
-    padding-left: 20px;
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    background: #fff;
-    left: 0;
-    right: 0;
-    align-items: center;
+  padding: 10px 200px;
+  padding-left: 20px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  background: #fff;
+  left: 0;
+  right: 0;
+  align-items: center;
 }
 .nav-li {
-    display: flex;
-    justify-content: space-between;
-    width: 500px;
-    a {
-        font-size: 1.3rem;
-    }
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+  a {
+    font-size: 1.3rem;
+  }
 }
 
 .nav-icon {
-    font-size: 4.2rem;
-    color: red;
-    position: relative;
-    margin-right: 10px;
+  font-size: 4.2rem;
+  color: red;
+  position: relative;
+  margin-right: 10px;
 }
 
 a {
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 0.15em;
-    color: black;
-    display: inline-block;
-    padding: 15px 20px;
-    position: relative;
-    cursor: pointer;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  color: black;
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+  cursor: pointer;
 }
 
 .nav-link:after {
-    background: none repeat scroll 0 0 transparent;
-    bottom: 0;
-    content: "";
-    display: block;
-    height: 2px;
-    left: 50%;
-    position: absolute;
-    background: black;
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    width: 0;
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: black;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
 }
 .nav-link:hover:after {
-    width: 100%;
-    left: 0;
+  width: 100%;
+  left: 0;
 }
 .container {
-    background-size: cover;
-    margin-top: 130px;
-    color: white;
-    font-family: "Graphik", sans-serif;
-    padding: 0px 0px 100px 0px;
-    overflow-x: hidden;
-    background-image: url("https://lh3.googleusercontent.com/08EF5z83YlOF9ODeV4rH-_48tSCxwbbJTPg23Z_JhnpWTpNsG7Pe_I98VLdIfFqcFy0k2cjltppu7I6P3WLSTNJ-IYvS7GQZUrpHnUgZk6yOHz5kRTzIXYZfsa3pm8HpJDZXoUAbbse7SDr6TFT5kyFqLn5FXtYAiejMGTRh_ZI3DaEidCTBogU1I4JAYWMVcTzUe4CfcaeX00zMuXjjqouNUME6gHO1s_Iay2Hs4ZIFRHbIeVydN2ytydDKb309Nz1isOHw3sHMNVB__K6WWp1RERh0Uh8vB0ziClNu0P5pRuDRTexzBGhCUTFUQHePK6LyIfsM_7EMT1q6drw0XM_KerZ_R8fyG03WD7B858hsWiR6I02QZtKOKan8xOT3PRH-vfenX1wvdoyffEv757RiITN9Q-Ajdijl07Unu4N0XFnYICFueUf2Xgpy-KHqVK5SCDaQmYHgBrh8XNo3zCXr0AkA_Ogt5_cOKINod1E_vhRYd2SrrSGyYJP9-c0DoIExMkJYa6pEVUUdqxq3rpVPC-8RV8_Z21aP25FHnJ2oX1dvyrXVfPwV_7FVZox52hArv-C-1qfRQ_8Z7-hlRVJaKjMeGBgtckNBumTIvc5VbjwKsxZr-UrKwHoICPZLCEGsPOakkmsE-6K4m8H7tqq_6EZmfop9l044Z25WP1EiKFJLZECs0lLK4wQe-OZNz2SBsPXLS34UsksjkwkFKg4B=w1432-h954-no?authuser=0");
+  background-size: cover;
+  margin-top: 130px;
+  color: white;
+  font-family: "Graphik", sans-serif;
+  padding: 0px 0px 100px 0px;
+  overflow-x: hidden;
+  background-image: url("../public/global-connections.jpg");
 }
 .row {
-    display: flex;
-    align-items: center;
-    padding: 50px 0px;
+  display: flex;
+  align-items: center;
+  padding: 50px 0px;
 }
 .col {
-    width: 100%;
-    display: flex;
-    padding: 0px 20px;
-    flex-direction: column;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  padding: 0px 20px;
+  flex-direction: column;
+  align-items: center;
 
-    h1 {
-        font-size: 2.5rem;
-        text-transform: uppercase;
-    }
-    p {
-        font-size: 1.6rem;
-        color: orange;
-    }
-    a {
-        color: white;
-    }
+  h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+  }
+  p {
+    font-size: 1.6rem;
+    color: orange;
+  }
+  a {
+    color: white;
+  }
 }
 .logo {
-    display: flex;
-    align-items: center;
-    width: 200px;
-    justify-content: space-between;
-    text-transform: uppercase;
-    font-size: 1.5rem;
-    color: red;
+  display: flex;
+  align-items: center;
+  width: 200px;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: red;
 }
 .bars-icon {
-    display: none;
-    font-size: 2.5rem;
+  display: none;
+  font-size: 2.5rem;
 }
 .side-bar {
-    position: fixed;
-    width: 300px;
-    background-color: #fff;
-    z-index: 3;
-    right: 0px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    transform: translateX(400px);
-    top: 0px;
-    transition: all ease 0.5s;
-    bottom: 0px;
-    padding-top: 100px;
-    a {
-        margin-bottom: 30px;
-        font-size: 1.5rem;
-    }
-    border-left: 1px solid rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 300px;
+  background-color: #fff;
+  z-index: 3;
+  right: 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  transform: translateX(400px);
+  top: 0px;
+  transition: all ease 0.5s;
+  bottom: 0px;
+  padding-top: 100px;
+  a {
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+  }
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
 }
 .disable-div {
-    position: absolute;
-    background: rgba(0, 0, 0, 0.5);
-    width: 100%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
 
-    z-index: 2;
-    display: none;
-    top: 0;
-    bottom: 0;
+  z-index: 2;
+  display: none;
+  top: 0;
+  bottom: 0;
 }
 .times-icon {
-    font-size: 2.5rem;
-    position: absolute;
-    top: 20px;
-    right: 40px;
-    cursor: pointer;
+  font-size: 2.5rem;
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  cursor: pointer;
 }
 
 @import "./dashboard";
