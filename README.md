@@ -27,4 +27,4 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-Deployed website: [https://covid19-tracking-sigma.vercel.app/](https://covid19-tracking-sigma.vercel.app/)
+Deployed website: [https://covid19-tracking-sigma.vercel.app/](https://covid19-tracking-fawn.vercel.app/)
