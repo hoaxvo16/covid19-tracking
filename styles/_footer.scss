@@ -1,29 +1,29 @@
 .footer {
-    width: 100%;
-    background-color: #fff;
-    color: #000;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 20px 280px;
-    display: flex;
-    justify-content: space-between;
-    a {
-        color: #666;
-        &:hover {
-            color: #000;
-        }
-        text-transform: none;
-        padding: 10px 0px;
-    }
-    p {
-        letter-spacing: 0.15rem;
-    }
-    flex-wrap: wrap;
+   width: 100%;
+   background-color: #fff;
+   color: #000;
+   border-top: 1px solid rgba(0, 0, 0, 0.1);
+   padding: 20px 280px;
+   display: flex;
+   justify-content: space-between;
+   a {
+      color: #666;
+      &:hover {
+         color: #000;
+      }
+      text-transform: none;
+      padding: 10px 0px;
+   }
+   p {
+      letter-spacing: 0.15rem;
+   }
+   flex-wrap: wrap;
 }
 .footer-col {
-    display: flex;
-    flex-direction: column;
-    padding: 0px 20px;
+   display: flex;
+   flex-direction: column;
+   padding: 0px 20px;
 }
 .mail-icon {
-    margin-left: 10px;
+   margin-left: 10px;
 }

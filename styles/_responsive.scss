@@ -1,74 +1,77 @@
 @media screen and (max-width: 1210px) {
-    .dashboard-col {
-        padding: 20px 50px;
-        margin: 20px 20px;
-    }
+   .dashboard-col {
+      padding: 20px 50px;
+      margin: 20px 20px;
+   }
 }
 
 @media screen and (max-width: 1000px) {
-    .nav-li {
-        display: none;
-    }
-    .bars-icon {
-        display: block;
-    }
-    .nav {
-        padding-right: 20px;
-    }
-    .footer {
-        padding: 20px 20px;
-    }
+   .nav-li {
+      display: none;
+   }
+   .bars-icon {
+      display: block;
+   }
+   .nav {
+      padding-right: 20px;
+   }
+   .footer {
+      padding: 20px 20px;
+   }
 }
 
 @media screen and (min-width: 1000px) {
-    .disable-div {
-        display: none !important;
-    }
-    .side-bar {
-        transform: translateX(400px) !important;
-    }
+   .disable-div {
+      display: none !important;
+   }
+   .side-bar {
+      transform: translateX(400px) !important;
+   }
 }
 
 @media screen and (max-width: 907px) {
-    .col p {
-        padding: 10px;
-    }
+   .col p {
+      padding: 10px;
+   }
 }
-@media screen and (max-width: 725px) {
-    .data-grid {
-        height: 500px;
-    }
-    .article {
-        display: flex;
-        flex-direction: column;
-        padding: 50px 20px;
-    }
-    .news-image {
-        width: 500px;
-    }
+@media screen and (max-width: 768px) {
+   .data-grid {
+      height: 500px;
+   }
+   .article {
+      display: flex;
+      flex-direction: column;
+      padding: 50px 20px;
+   }
+   .news-image {
+      width: 500px;
+   }
+   body {
+      font-size: 14px;
+   }
 }
 @media screen and (max-width: 500px) {
-    .data-grid {
-        height: 450px;
-    }
-    .total span {
-        margin: 10px 0px;
-    }
-    .news-image {
-        width: 400px;
-    }
+   .data-grid {
+      height: 450px;
+   }
+   .total span {
+      margin: 10px 0px;
+   }
+   .news-image {
+      width: 400px;
+   }
 }
 @media screen and (max-width: 400px) {
-    .data-grid {
-        height: 400px;
-    }
-    .news-image {
-        width: 300px;
-    }
+   .data-grid {
+      height: 400px;
+   }
+   .news-image {
+      width: 300px;
+   }
 }
 
 @media screen and (max-width: 300px) {
-    .data-grid {
-        height: 350px;
-    }
+   .data-grid {
+      height: 350px;
+   }
 }

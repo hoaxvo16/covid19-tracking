@@ -2,7 +2,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   min-height: 100%;
   overflow-x: hidden;
   position: relative;
@@ -50,7 +50,7 @@ body {
 }
 
 .nav-li a {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 .nav-icon {
@@ -74,7 +74,7 @@ a {
 .nav-link:after {
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
-  content: "";
+  content: '';
   display: block;
   height: 2px;
   left: 50%;
@@ -94,7 +94,7 @@ a {
   background-size: cover;
   margin-top: 130px;
   color: white;
-  font-family: "Graphik", sans-serif;
+  font-family: 'Graphik', sans-serif;
   padding: 0px 0px 100px 0px;
   overflow-x: hidden;
   background-image: url("../public/global-connections.jpg");
@@ -126,12 +126,12 @@ a {
 }
 
 .col h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-transform: uppercase;
 }
 
 .col p {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   color: orange;
 }
 
@@ -151,13 +151,13 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: red;
 }
 
 .bars-icon {
   display: none;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .side-bar {
@@ -188,7 +188,7 @@ a {
 
 .side-bar a {
   margin-bottom: 30px;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .disable-div {
@@ -525,7 +525,7 @@ a {
   }
 }
 
-@media screen and (max-width: 725px) {
+@media screen and (max-width: 768px) {
   .data-grid {
     height: 500px;
   }
@@ -541,6 +541,9 @@ a {
   }
   .news-image {
     width: 500px;
+  }
+  body {
+    font-size: 14px;
   }
 }
 
